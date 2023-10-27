@@ -189,7 +189,7 @@
                 <!--<input type="text" name="Message" placeholder="Email Subject">-->
                 
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="Message" id="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
             
         </form>
@@ -236,7 +236,7 @@
                 msg.innerHTML= "Message sent Succesfully"
                 setTimeout(function(){
                     msg.innerHTML=""
-                },5000)
+                },3000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
